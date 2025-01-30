@@ -28,5 +28,11 @@
       }
     }
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/sixersoft/eps-payment.git"
+    }
+  ],
   "minimum-stability": "stable"
 }
