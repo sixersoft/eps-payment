@@ -1,0 +1,32 @@
+{
+  "name": "sixersoft/eps-payment",
+  "description": "A Laravel package for integrating Banglaseshi Easy payment system (EPS) www.eps.com.bd payment gateway. This package simplifies the process of initiating payments using EPS, allowing developers to integrate it effortlessly into their Laravel applications.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Sixersoft\\EpsPayment\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "sixersoft",
+      "email": "sixersoft@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^9.0|^10.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sixersoft\\EPSPayment\\EpsServiceProvider"
+      ],
+      "aliases": {
+        "EPS": "Sixersoft\\EPSPayment\\Facades\\EPSFacade"
+      }
+    }
+  },
+  "minimum-stability": "stable"
+}
